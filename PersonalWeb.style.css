@@ -1,0 +1,272 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0%;
+    background-image: url("https://lh5.googleusercontent.com/yJDS20Sjx4liVo9GetdcLkQBhj0OtRReHsn7UtGCG_lbLwSYg98ufgxSZ9MhvMKnAZcbiTEjDhS6DFyGErF5c-cGHTENaJ1zEhTtLoZtk7wr0aYFeotXOQ4TiTo0uX4Smo5LSU2J");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+.header {
+    background-color: #2b2b2b;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.MyName {
+    letter-spacing: 5px;
+    font-size: 35px;
+}
+.Tagline {
+    letter-spacing: 3px;
+    color: goldenrod;
+}
+.headerText {
+    border-top: 1px solid gold;
+    border-bottom: 1px solid gold;
+    padding: 30px 50px;
+}
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    background-color: #2b2b2b;
+}
+li {
+    color: goldenrod;
+    margin: 10px 60px;
+    font-weight: 600;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.AboutMe--header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2b2b2b;
+    height: 80px;
+    width: 100%;
+    margin: auto;
+    border-radius: 10px 10px 0px 0px;
+    line-height: 7px;
+}
+.line {
+    background-color: goldenrod;
+    height: 5px;
+    width: 100px;
+}
+.HomeImage {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+#AboutMe {
+    display: flex;
+}
+.PersonalInfor {
+    margin-left: 30px;
+    background-color: rgba(202,223,239, 0.6);
+    border-radius: 10px;
+}
+.infor {
+    color: #2b2b2b;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 40px;
+}
+.card {
+    font-size: 15px;
+    border:10px solid black;
+    padding: 2rem 1rem 1.5rem 1rem;
+    min-height: 3em;
+    resize: both;
+    background: #ffd73e33;
+    border-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cstyle%3Epath%7Banimation:stroke 5s infinite linear%3B%7D%40keyframes stroke%7Bto%7Bstroke-dashoffset:776%3B%7D%7D%3C/style%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%232d3561' /%3E%3Cstop offset='25%25' stop-color='%23c05c7e' /%3E%3Cstop offset='50%25' stop-color='%23f3826f' /%3E%3Cstop offset='100%25' stop-color='%23ffb961' /%3E%3C/linearGradient%3E %3Cpath d='M1.5 1.5 l97 0l0 97l-97 0 l0 -97' stroke-linecap='square' stroke='url(%23g)' stroke-width='3' stroke-dasharray='388'/%3E %3C/svg%3E") 1;
+    width: 70%;
+    height: 23%;
+    display: flex;
+}
+.card_img {
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    border-radius: 100%;
+    margin-top: -10px;
+}
+.card_infor {
+    margin-top: -10px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    padding: 0px 10px;
+}
+.name {
+    font-size: 28px;
+    color: black;
+    text-shadow: 1px 1px red;
+    line-height: 0px;
+}
+.falcuty {
+    margin-top: -10px;
+    line-height: 0px;
+    font-weight: 500;
+}
+.Photos--header,.Blogs--header,.Contact--header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: goldenrod;
+    background-color: #2b2b2b;
+    line-height: 3px;
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 70px;
+}
+.grid-img {
+    column-count: 4;
+    column-gap: 10px;
+}
+.grid-img img {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    break-inside: avoid;
+}
+.imgContainer {
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	display: -webkit-box;
+    border-radius: 10px;
+    margin: 10px;
+}
+.img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: -webkit-box;
+    transition: all 1.5s ease;
+    -webkit-transition: all 1.5s ease;
+    -moz-transition: all 1.5s ease;
+    -o-transition: all 1.5s ease;
+}
+.img:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2); 
+    -moz-transform: scale(1.2); 
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+}
+#Blogs {
+    height: 700px;
+    text-align: center;
+}
+.Contact--container {
+    height: 700px;
+    width: 50%;
+    margin: auto;
+    border-radius: 10px;
+    background-color: rgba(202,223,239, 0.6);
+}
+.Contact--infor {
+    padding-top: 15px;
+    margin-left: 20px;
+    font-weight: 500;
+    font-size: 17px;
+}
+#ques {
+    text-align: center;
+}
+input {
+    border: 1px solid #ededed;
+    padding-left: 20px;
+    background-color: #fbfbfb;
+}
+#name {
+    height: 45px;
+    width: 80%;
+    margin:auto;
+}
+#email,#number {
+    height: 45px;
+    width: 37.3%;
+    margin: auto;
+}
+#number {
+    margin-left: 30px;
+}
+#hr {
+    width: 55px;
+    height: 4px;
+    background-color: black;
+    margin: auto;
+}
+#content {
+    width: 80%;
+    border: 1px solid #ededed;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 23px;
+    background-color: #fbfbfb;
+}
+.google {
+    color: blue;
+}
+.google:hover {
+    color: blue;
+}
+#policies {
+    color:blackr;
+    margin-left: 20px;
+}
+.btn {
+    margin-left: 230px;
+    margin-top: 20px;
+    height: 45px;
+    width: 260px;
+    border: 1px solid #66a55f;
+    background-color: #66a55f;
+    font-size: 13px;
+    color: white;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+.btn:hover {
+    background-color: white;
+    color: #66a55f;
+    cursor: pointer;
+}
+.footer {
+    padding-top: 20px;
+    margin-top: 50px;
+    background-color: #2b2b2b;
+    height: 90px;
+    width: 100%;
+    color: white;
+    font-size: 15px;
+    font-weight: 100;
+    text-align: center;
+}
